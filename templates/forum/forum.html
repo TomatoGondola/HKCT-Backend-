@@ -1,0 +1,275 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+<!-- breadcrumbs  -->
+<section class="my-4">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">
+					Message Board
+				</li>
+			</ol>
+		</nav>
+	</div>
+</section>
+<!-- announcements -->
+<div class="container-fluid bg-dark">
+	<div class="container py-5 px-4 bg-dark">
+		<div class="row g-0">
+			<div class="col-lg-10">
+				<div class="accordion" id="accordionPanelsStayOpenExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button bg-secondary text-light"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseOne"
+								aria-expanded="true"
+								aria-controls="panelsStayOpen-collapseOne">
+								Announcements
+							</button>
+						</h2>
+						<div
+							id="panelsStayOpen-collapseOne"
+							class="accordion-collapse collapse show">
+							<div class="accordion-body bg-dark">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="card bg-warning my-1 text-dark">
+												<div class="card-body">
+													<div class="row">
+														<div class="col-md-1">
+															<i class="px-3 my-2 far fa-cow fa-2x"></i>
+														</div>
+														<div class="col-md-7">
+															<h5 class="card-title">Category</h5>
+															<p>
+																<small
+																	>Lorem ipsum dolor sit amet, consectetur
+																	adipisicing elit. Cupiditate quod magnam
+																	ratione!</small
+																>
+															</p>
+															<hr />
+															<p>
+																<small>Time Since | Thread Title</small>
+															</p>
+														</div>
+														<div class="col-md-2">
+															<p><small>Threads</small></p>
+															<p><small>Messages</small></p>
+														</div>
+														<div class="col-md-2">
+															<h6>Username</h6>
+															<img
+																src="../img/capy.jpg"
+																alt=""
+																class="card-img-bottom rounded-5" />
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button bg-secondary text-light"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseTwo"
+								aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseTwo">
+								School Related
+							</button>
+						</h2>
+						<div
+							id="panelsStayOpen-collapseTwo"
+							class="accordion-collapse bg-dark show">
+							<div class="accordion-body">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="card bg-warning my-1 text-dark">
+												<div class="card-body">
+													<div class="row">
+														<div class="col-md-1">
+															<i class="px-3 my-2 far fa-cow fa-2x"></i>
+														</div>
+														<div class="col-md-7">
+															<h5 class="card-title">Category</h5>
+															<p>
+																<small
+																	>Lorem ipsum dolor sit amet, consectetur
+																	adipisicing elit. Cupiditate quod magnam
+																	ratione!</small
+																>
+															</p>
+															<hr />
+															<p>
+																<small>Time Since | Thread Title</small>
+															</p>
+														</div>
+														<div class="col-md-2">
+															<p><small>Threads</small></p>
+															<p><small>Messages</small></p>
+														</div>
+														<div class="col-md-2">
+															<h6>Username</h6>
+															<img
+																src="../img/capy.jpg"
+																alt=""
+																class="card-img-bottom rounded-5" />
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button bg-secondary text-white"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseThree"
+								aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseThree">
+								Miscellaneous
+							</button>
+						</h2>
+						<div
+							id="panelsStayOpen-collapseThree"
+							class="accordion-collapse bg-dark show">
+							<div class="accordion-body">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="card bg-warning my-1 text-dark">
+												<div class="card-body">
+													<div class="row">
+														<div class="col-md-1">
+															<i class="px-3 my-2 far fa-cow fa-2x"></i>
+														</div>
+														<div class="col-md-7">
+															<h5 class="card-title">Category</h5>
+															<p>
+																<small
+																	>Lorem ipsum dolor sit amet, consectetur
+																	adipisicing elit. Cupiditate quod magnam
+																	ratione!</small
+																>
+															</p>
+															<hr />
+															<p>
+																<small>Time Since | Thread Title</small>
+															</p>
+														</div>
+														<div class="col-md-2">
+															<p><small>Threads</small></p>
+															<p><small>Messages</small></p>
+														</div>
+														<div class="col-md-2">
+															<h6>Username</h6>
+															<img
+																src="../img/capy.jpg"
+																alt=""
+																class="card-img-bottom rounded-5" />
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- side panel -->
+			<div class="col-lg-2 my-2 bg-dark">
+				<!-- search  -->
+				<div class="card bg-warning text-dark ms-3 border-0">
+					<div class="card-body">
+						<h5 class="card-title">Search</h5>
+						<form>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label"
+									>Title Search</label
+								>
+								<input
+									type="email"
+									class="form-control"
+									id="exampleInputEmail1"
+									aria-describedby="emailHelp" />
+							</div>
+							<div class="mb-3">
+								<label for="exampleInputPassword1" class="form-label"
+									>Keyword Search</label
+								>
+								<input
+									type="password"
+									class="form-control"
+									id="exampleInputPassword1" />
+							</div>
+
+							<button type="submit" class="btn rounded-1 btn-primary">
+								Submit
+							</button>
+						</form>
+						<form action=""></form>
+					</div>
+				</div>
+				<br />
+				<div class="card bg-warning text-dark ms-3 border-0">
+					<div class="card-body">
+						<h5>Latest Thread</h5>
+						<hr />
+						<div class="row">
+							<div class="col-md-4">
+								<img
+									src="../img/capy.jpg"
+									alt=""
+									class="card-img-bottom rounded-5" />
+							</div>
+							<div class="col-md-8">
+								<a href="#">Stinky Smelly</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br />
+				<div class="card bg-warning text-dark ms-3 border-0">
+					<div class="card-body">
+						<h5>Latest Msg</h5>
+						<hr />
+						<div class="row">
+							<div class="col-md-4">
+								<img
+									src="../img/capy.jpg"
+									alt=""
+									class="card-img-bottom rounded-5" />
+							</div>
+							<div class="col-md-8">
+								<a href="#">Stinky Smelly</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

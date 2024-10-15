@@ -1,1 +1,135 @@
-<h1>about.html</h1>
+{% extends 'base.html' %} {% block content %} {% load static %}
+<!-- header  -->
+<header class="bg-secondary py-5" id="about">
+	<div class="container"><h1 class="display-1">About</h1></div>
+</header>
+<!-- breadcrumbs  -->
+<section class="my-4">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">About</li>
+			</ol>
+		</nav>
+	</div>
+</section>
+<section class="bg-secondary">
+	<div class="container py-5">
+		<img src={% static "img/Mit-Lab.jpg" %} alt="" class="w-100" />
+	</div>
+</section>
+
+<!-- Basic Text  -->
+<section class="text-light pt-6">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 offset-lg-1">
+				<p class="lead">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci
+					dolorem qui sapiente expedita? Laborum necessitatibus est consequatur
+					pariatur dolorem, ipsam unde odio, voluptatibus nesciunt tempora totam
+					molestias explicabo aut?
+				</p>
+
+				<p class="lead mb-6">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. In vitae
+					consequuntur molestias magnam quisquam est! Maxime nihil, ipsum minus
+					dicta recusandae, autem aspernatur rerum error facere incidunt quos
+					aliquam repellat iusto dolorum adipisci itaque doloribus odio suscipit
+					maiores. Eligendi, hic?
+				</p>
+
+				<h2 class="mb-3">Advantages in Scheming</h2>
+				<p class="lead">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci
+					dolorem qui sapiente expedita? Laborum necessitatibus est consequatur
+					pariatur dolorem, ipsam unde odio, voluptatibus nesciunt tempora totam
+					molestias explicabo aut?
+				</p>
+
+				<p class="lead pb-5">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. In vitae
+					consequuntur molestias magnam quisquam est! Maxime nihil, ipsum minus
+					dicta recusandae, autem aspernatur rerum error facere incidunt quos
+					aliquam repellat iusto dolorum adipisci itaque doloribus odio suscipit
+					maiores. Eligendi, hic?
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- cards  -->
+<section class="pt-5 bg-secondary">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h5>
+							<i class="fas fa-check text-primary"></i> Smelly BootStrappers
+						</h5>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+							veritatis blanditiis, rem cum at atque natus deserunt repellat
+							dolor quo illum consectetur sint dolorum incidunt tenetur eaque,
+							debitis laudantium quis voluptatibus. Est, in?
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h5>
+							<i class="fas fa-check text-primary"></i> Smelly BootStrappers
+						</h5>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+							veritatis blanditiis, rem cum at atque natus deserunt repellat
+							dolor quo illum consectetur sint dolorum incidunt tenetur eaque,
+							debitis laudantium quis voluptatibus. Est, in?
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h5>
+							<i class="fas fa-check text-primary"></i> Smelly BootStrappers
+						</h5>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+							veritatis blanditiis, rem cum at atque natus deserunt repellat
+							dolor quo illum consectetur sint dolorum incidunt tenetur eaque,
+							debitis laudantium quis voluptatibus. Est, in?
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- box box  -->
+<section class="py-5 bg-secondary">
+	<div class="row">
+		<div class="col-lg-8 offset-lg-2">
+			<div class="card rounded-0 border-0 fs-6">
+				<div class="card-body p4">
+					<h3>We See Nothing and We Especially Hear Nothing</h3>
+					<p class="lead">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+						expedita nemo repellat temporibus corporis suscipit impedit, facilis
+						nesciunt, earum maxime facere. Voluptatem, reprehenderit eum ipsum
+						tempora modi saepe ullam sunt, consectetur reiciendis asperiores
+						distinctio odio quod nobis? Perspiciatis, nemo dolorum nostrum saepe
+						ducimus veritatis.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

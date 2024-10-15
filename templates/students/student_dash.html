@@ -1,0 +1,345 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+<header class="header position-realtive">
+	<div class="container text-warning">
+		<div class="row">
+			<div class="col-md-6 flex-fill">
+				<h1 class="mt-5">Welcome Student</h1>
+			</div>
+			<div class="col-md-6 flex-fill">
+				<h1 class="mt-5">Department Title</h1>
+			</div>
+		</div>
+		<div class="row d-flex flex-fill g-2">
+			<div class="col-md-12">
+				<div
+					class="card text-light"
+					style="background-color: rgba(107, 161, 130, 0.8)">
+					<div class="d-flex justify-content-between">
+						<h2 class="card-title fw-bold mx-4 my-3">Course title</h2>
+						<img
+							src="../img/snek.jpg "
+							alt=""
+							class="career-logo"
+							style="height: 170px" />
+					</div>
+
+					<h5 class="mx-4 mb-3">Hierarchy</h5>
+
+					<div class="card-body">
+						<p><strong class="mx-4">course description</strong></p>
+						<p class="mx-4">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
+							eveniet dolor perspiciatis?
+						</p>
+					</div>
+					<div class="card-footer bg-secondary">
+						<div class="d-flex justify-content-between">
+							<div class="">Start Date - End Date</div>
+							<div class="">Pending | Active</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- course materials  -->
+<section>
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-md-11 mx-auto">
+				<div class="card text-warning bg-secondary">
+					<div class="card-body">
+						<div class="d-flex">
+							<div class="p-1 flex-fill col-md-3">Student Name #1</div>
+							<div class="p-1 flex-fill col-md-3">
+								<div class="d-flex justify-content-center">Grade</div>
+							</div>
+							<div class="p-1 flex-fill col-md-3">
+								<div class="d-flex justify-content-center">
+									Course Materials
+								</div>
+							</div>
+						</div>
+						<hr />
+
+						<div class="d-flex">
+							<div class="p-1 flex-fill col-md-3">Assignment #1</div>
+							<div class="p-1 flex-fill col-md-3">
+								<div class="d-flex justify-content-center">
+									<h5 class="fw-bold">88</h5>
+								</div>
+							</div>
+							<div class="p-1 flex-fill col-md-3">
+								<div class="d-flex justify-content-center">
+									<button type="button" class="btn p-1 btn-success rounded-2">
+										Download
+									</button>
+								</div>
+							</div>
+						</div>
+						<hr />
+						<div class="d-flex">
+							<div class="p-1 flex-fill col-md-3">Homework #1</div>
+							<div class="p-1 flex-fill col-md-3">
+								<div class="d-flex justify-content-center">
+									<h5 class="fw-bold">88</h5>
+								</div>
+							</div>
+							<div class="p-1 flex-fill col-md-3">
+								<div class="d-flex justify-content-center">
+									<button type="button" class="btn p-1 btn-success rounded-2">
+										Download
+									</button>
+								</div>
+							</div>
+						</div>
+						<hr />
+						<div class="d-flex">
+							<div class="p-1 flex-fill col-md-3">Assignment #2</div>
+							<div class="p-1 flex-fill col-md-3">
+								<div class="d-flex justify-content-center">
+									<h5 class="fw-bold">88</h5>
+								</div>
+							</div>
+							<div class="p-1 flex-fill col-md-3">
+								<div class="d-flex justify-content-center">
+									<button type="button" class="btn p-1 btn-success rounded-2">
+										Download
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- certified bits  -->
+<section>
+	<div class="container mb-5 mt-1">
+		<div class="d-flex flex-column">
+			<div class="flex-fill p-2">
+				<div class="card bg-secondary">
+					<div class="card-body">
+						<h2 class="fw-bold card-title">
+							Certificate <i class="fas text-warning fa-2x fa-medal"></i>
+						</h2>
+
+						<hr />
+						<div class="d-flex justify-content-evenly">
+							<div class="">
+								<p class="card-text"><strong>Course.Title</strong></p>
+							</div>
+							<div class="">
+								<p class="card-text"><strong>Course.Code</strong></p>
+							</div>
+							<div class="">
+								<p class="card-text"><strong>Certified</strong></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- course suggestion -->
+
+<section>
+	<div class="container"><h3>Course Suggestions</h3></div>
+	<div class="container py-4">
+		<div class="d-flex flex-fill">
+			<div class="flex-fill px-1">
+				<div class="card" style="background-color: rgba(107, 161, 130, 0.7)">
+					<div class="d-flex justify-content-between">
+						<h2 class="card-title fw-bold my-3 mx-2">Course title</h2>
+						<img src="../img/capy.jpg" alt="" class="career-logo" />
+					</div>
+
+					<h5 class="mb-3 mx-2">Department</h5>
+
+					<h6 class="card-subtitle mb-3 mx-2 text-body-secondary">
+						Date - 2024
+					</h6>
+					<div class="card-body">
+						<p><strong>course description</strong></p>
+					</div>
+					<div class="card-footer bg-secondary">
+						<div class="d-flex justify-content-between">
+							<div class="">Start Date - End Date</div>
+							<button
+								type="button"
+								class="btn text-light rounded-1 text-center btn-danger">
+								<i class="far fa-eye"></i> Apply
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex-fill px-1">
+				<div class="card" style="background-color: rgba(107, 161, 130, 0.7)">
+					<div class="d-flex justify-content-between">
+						<h2 class="card-title fw-bold my-3 mx-2">Course title</h2>
+						<img src="../img/capy.jpg" alt="" class="career-logo" />
+					</div>
+
+					<h5 class="mb-3 mx-2">Department</h5>
+
+					<h6 class="card-subtitle mb-3 mx-2 text-body-secondary">
+						Date - 2024
+					</h6>
+					<div class="card-body">
+						<p><strong>course description</strong></p>
+					</div>
+					<div class="card-footer bg-secondary">
+						<div class="d-flex justify-content-between">
+							<div class="">Start Date - End Date</div>
+							<button
+								type="button"
+								class="btn text-light rounded-1 text-center btn-danger">
+								<i class="far fa-eye"></i> Apply
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex-fill px-1">
+				<div class="card" style="background-color: rgba(107, 161, 130, 0.7)">
+					<div class="d-flex justify-content-between">
+						<h2 class="card-title fw-bold my-3 mx-2">Course title</h2>
+						<img src="../img/capy.jpg" alt="" class="career-logo" />
+					</div>
+
+					<h5 class="mb-3 mx-2">Department</h5>
+
+					<h6 class="card-subtitle mb-3 mx-2 text-body-secondary">
+						Date - 2024
+					</h6>
+					<div class="card-body">
+						<p><strong>course description</strong></p>
+					</div>
+					<div class="card-footer bg-secondary">
+						<div class="d-flex justify-content-between">
+							<div class="">Start Date - End Date</div>
+							<button
+								type="button"
+								class="btn text-light rounded-1 text-center btn-danger">
+								<i class="far fa-eye"></i> Apply
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- search bar  -->
+
+<section id="showcase">
+	<div class="container text-center">
+		<div class="home-search p-5">
+			<div class="overlay p-5">
+				<h1 class="display-4 mb-4">Course Search</h1>
+				<p class="lead">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
+					quas, asperiores eveniet vel nostrum magnam voluptatum tempore!
+					Consectetur, id commodi!
+				</p>
+				<div class="search">
+					<form action="search.html">
+						<!-- Form Row 1 -->
+						<div class="row">
+							<div class="col-md-4 mb-3">
+								<label class="sr-only">Keywords</label>
+								<input
+									type="text"
+									name="keywords"
+									class="form-control"
+									placeholder="Keyword (Bathrooms, ClubHouse, etc)" />
+							</div>
+
+							<div class="col-md-4 mb-3">
+								<label class="sr-only">Title</label>
+								<input
+									type="text"
+									name="Title"
+									class="form-control"
+									placeholder="Title" />
+							</div>
+
+							<div class="col-md-4 mb-3">
+								<label class="sr-only">Tier</label>
+								<select name="district" class="form-control">
+									<option selected="true" disabled="disabled">Tier</option>
+									<option value="IL">Basic</option>
+									<option value="KT">Kwai Tsing</option>
+									<option value="NR">North</option>
+									<option value="SK">Sai Kung</option>
+									<option value="ST">Sha Tin</option>
+									<option value="TP">Tai Po</option>
+									<option value="TW">Tsuen Wan</option>
+									<option value="TM">Tuen Mun</option>
+									<option value="YL">Yuen Long</option>
+									<option value="KC">Kowloon City</option>
+									<option value="KW">Kwun Tong</option>
+									<option value="SS">Sham Shui Po</option>
+									<option value="WT">Wong Tai Sin</option>
+									<option value="YM">Yau Tsim Mong</option>
+									<option value="CW">Central & Western</option>
+									<option value="ER">Eastern</option>
+									<option value="SR">Southern</option>
+									<option value="WC">Wan Chai</option>
+								</select>
+							</div>
+						</div>
+						<!-- Form Row 2 -->
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<label class="sr-only">Education</label>
+								<select name="bedrooms" class="form-control">
+									<option selected="true" disabled="disabled">Education</option>
+									<option value="1">Grade 11</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</div>
+							<div class="col-md-6 mb-3">
+								<select name="price" class="form-control" id="type">
+									<option selected="true" disabled="disabled">
+										Department
+									</option>
+									<option value="1000000">Python</option>
+									<option value="2000000">$2,000,000</option>
+									<option value="3000000">$3,000,000</option>
+									<option value="4000000">$4,000,000</option>
+									<option value="5000000">$5,000,000</option>
+									<option value="6000000">$6,000,000</option>
+									<option value="7000000">$7,000,000</option>
+									<option value="8000000">$8,000,000</option>
+									<option value="9000000">$9,000,000</option>
+									<option value="10000000">$10M+</option>
+								</select>
+							</div>
+						</div>
+						<button class="btn btn-secondary btn-block mt-4" type="submit">
+							Submit form
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

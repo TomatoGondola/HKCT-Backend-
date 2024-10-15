@@ -1,0 +1,146 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+
+<div class="container-fluid py-4 bg-dark">
+	<!-- title  -->
+	<div class="container py-4">
+		<div class="d-flex">
+			<div class="col-md-10">
+				<h2 class="my-4">Thread Title</h2>
+				<h5>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+					doloribus explicabo consequatur?
+				</h5>
+			</div>
+			<div class="col-md-2 pt-6">
+				<button
+					type="button"
+					class="btn rounded-2 btn-primary"
+					data-bs-toggle="modal"
+					data-bs-target="#CourseModal">
+					Submit Thread
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- threads  -->
+	<div class="container px-2 bg-dark">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card bg-warning my-4 pt-2 text-dark">
+					<div class="card-body">
+						<div class="row d-flex g-0">
+							<div class="col-md-1">
+								<i class="px-3 my-2 far fa-cow fa-2x"></i>
+							</div>
+							<div class="col-md-7">
+								<h5 class="card-title"><a href="#">Category</a></h5>
+								<p>
+									<small
+										>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Cupiditate quod magnam ratione!</small
+									>
+								</p>
+								<hr />
+								<p>
+									<small>Time Since | Thread Title</small>
+								</p>
+							</div>
+							<div class="col-md-1">
+								<p><small>Threads</small></p>
+								<p><small>Messages</small></p>
+							</div>
+							<div class="col-md-2">
+								<h6>Username</h6>
+								<img
+									src="../img/capy.jpg"
+									alt=""
+									class="card-img-top rounded-5" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- paginator  -->
+		<nav>
+			<ul class="pagination justify-content-center">
+				<li class="page-item">
+					<a
+						class="page-link text-dark bg-warning"
+						href="#"
+						aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link text-dark bg-warning" href="#">1</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link text-dark bg-warning" href="#">2</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link text-dark bg-warning" href="#">3</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link text-dark bg-warning" href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<!-- thread modal  -->
+<div
+	class="modal fade"
+	id="CourseModal"
+	tabindex="-1"
+	data-bs-backdrop="static"
+	data-bs-keyboard="false"
+	aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content bg-secondary">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="exampleModalLabel">Thread Creator</h1>
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="modal"
+					aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="input-group input-group-sm">
+						<span class="input-group-text">Title</span>
+						<textarea
+							class="form-control"
+							aria-label="With textarea"></textarea>
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="col-form-label"
+							>Message Body</label
+						>
+						<textarea
+							class="form-control"
+							id="exampleFormControlTextarea1"
+							rows="3"></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button
+					type="button"
+					class="btn btn-danger rounded-2"
+					data-bs-dismiss="modal">
+					Close
+				</button>
+				<button type="button" class="btn rounded-2 btn-success">
+					Create Course
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
